@@ -49,8 +49,8 @@
     "clean": "rimraf ./dist",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
     "sync": "npm run build && npx cap sync && npm run postcap",
-    "postinstall": "patch-package && node scripts/patch-gradle.js",
-    "postcap": "node scripts/patch-gradle.js"
+    "postinstall": "npx patch-package && node scripts/patch-gradle.js",
+    "postcap": "npx patch-package && node scripts/patch-gradle.js"
   },
   "devDependencies": {
     "@capacitor/android": "^7.0.0",
