@@ -1,0 +1,11 @@
+{
+  "appId": "io.trik.capacitor.zeroconf",
+  "appName": "CapacitorZeroconf",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "ZeroConf": {
+      "name": "ZeroConf"
+    }
+  }
+} 

@@ -196,7 +196,7 @@ close() => Promise<void>
 
 #### ZeroConfWatchResult
 
-<code>{ action: <a href="#zeroconfwatchaction">ZeroConfWatchAction</a>; service: <a href="#zeroconfservice">ZeroConfService</a>; }</code>
+<code>{ action: <a href="#zeroconfwatchaction">ZeroConfWatchAction</a>; service: <a href="#zeroconfservice">ZeroConfService</a>; }</code>
 
 
 #### ZeroConfWatchAction
