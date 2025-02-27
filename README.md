@@ -1,6 +1,27 @@
-# capacitor-zeroconf
+# @laravelka/capacitor-zeroconf
 
-Capacitor ZeroConf plugin
+Fork of [capacitor-zeroconf](https://github.com/trik/capacitor-zeroconf) with Java 17 compatibility.
+
+## Changes from original
+- Updated to work with Java 17
+- Compatible with Capacitor 7.0
+- Added automatic Java version patching via patch-package
+
+## Install
+
+```bash
+npm install @laravelka/capacitor-zeroconf
+npx cap sync
+```
+
+or
+
+```bash
+yarn add @laravelka/capacitor-zeroconf
+yarn cap sync
+```
+
+## Original Documentation
 
 This plugin allows you to browse and publish ZeroConf/Bonjour/mDNS services from applications developed using Ionic's Capacitor.
 
@@ -9,20 +30,6 @@ This is not a background service. When the cordova view is destroyed/terminated,
 Android, iOS and [Electron](https://github.com/capacitor-community/electron) platforms are supported.
 
 The has been ported from [Cordova ZeroConf Plugin](https://github.com/becvert/cordova-plugin-zeroconf).
-
-## Install
-
-```bash
-npm install capacitor-zeroconf
-npx cap sync
-```
-
-or
-
-```bash
-yarn add capacitor-zeroconf
-yarn cap sync
-```
 
 ## API
 
@@ -196,7 +203,10 @@ close() => Promise<void>
 
 #### ZeroConfWatchResult
 
-<code>{ action: <a href="#zeroconfwatchaction">ZeroConfWatchAction</a>; service: <a href="#zeroconfservice">ZeroConfService</a>; }</code>
+<code>{
+ action: <a href="#zeroconfwatchaction">ZeroConfWatchAction</a>;
+ service: <a href="#zeroconfservice">ZeroConfService</a>;
+ }</code>
 
 
 #### ZeroConfWatchAction
@@ -219,3 +229,9 @@ close() => Promise<void>
 <code><a href="#zeroconfwatchrequest">ZeroConfWatchRequest</a></code>
 
 </docgen-api>
+
+## Credits
+Original plugin by [Marco Marche](https://github.com/trik)
+
+## License
+MIT License
